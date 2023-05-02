@@ -1,0 +1,16 @@
+architectures:
+  - id: default
+    name: default
+    structure:
+      - path: /
+        doc: index
+
+      - path: example-docs
+        doc: example-docs/index
+        subpaths:
+          - title: Subpages
+            subpaths:
+              - path: first-subpage
+                doc: example-docs/first-subpage
+          - path: another-page
+            doc: example-docs/another-page
