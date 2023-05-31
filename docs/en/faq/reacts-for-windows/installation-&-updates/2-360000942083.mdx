@@ -1,0 +1,82 @@
+---
+layout: default
+parent: Reacts for Windows
+lang: en
+id: "360000942083"
+title: Silent Update System — General Documentation
+---
+Description
+===========
+
+The _**Silent Update System**_ is a Reacts mechanism designed to maintain the Reacts application up-to-date. The service allows _**Philips**_ to deliver security and feature updates in a way that is fast, transparent, consistent, reliable and secure.
+
+Process
+=======
+
+The _**Silent Update System**_ automatically downloads and prepares new versions of the Reacts application in the background. As soon as the user closes and re-opens the Reacts application, the latest version is launched. The system has no impact on the end-user: the updates are applied without generating any interruption whatsoever.
+
+Delivery Frequency
+==================
+
+Fastlane
+--------
+
+By default, all new Reacts installations are subscribed to the _**Fastlane**_. Clients that subscribe to the **_Fastlane_** will receive Reacts updates as soon as they are stable and released to the public. Clients that subscribe to the _**Fastlane**_ will benefit from the most up-to-date security and features. 
+
+Clients subscribe to the **_Fastlane_** automatically during the normal installation of the application.
+
+Technical Documentation
+=======================
+
+Domain Names
+------------
+
+To allow the system to work, the following domain names must be whitelisted in organizational firewalls. These are part of the domain names already used by the Reacts application.
+
+ 
+
+Domain Names
+
+Purpose
+
+`svc.iitreacts.com`
+
+The service will connect regularly to this API to determine if newer versions are available.
+
+`www.iitreacts.com`
+
+If a newer version is available, the service will download the package at this address.
+
+Outbound Ports
+--------------
+
+Only port **443** is used.
+
+Inbound Ports
+-------------
+
+No inbound ports are used.
+
+Protocols
+---------
+
+Only HTTPS is used.
+
+Executables
+-----------
+
+ 
+
+Executable File
+
+Purpose
+
+ReactsUpdateService.exe
+
+Windows service responsible to keep Reacts up-to-date.
+
+ReactsLoader.exe
+
+Executable used to start the Reacts client.
+
+

@@ -4,31 +4,30 @@ paths:
 
 iaFile: ./ia.yaml
 
-title: Customizable title
+title: Reacts service documentation
 
 htmlCustomization:
   path: ./htmlCustomization.html
   position: head
 
 header:
-  - label: Custom hover menu
+  - label: Reacts applications
     position: left
-    link: https://www.example.com
+    link: https://webapp.reacts.com/
     options:
-      - label: menu item
-        link: https://www.example.com
+      - label: Web App
+        link: https://webapp.reacts.com/
+      - label: Dashboard
+        link: https://customer.reacts.com/
     type: hover
-  - label: Example of toggle menu
-    position: right
+  - label: Legal and regulatory
+    position: left
     options:
-      - label: menu item
-        link: https://www.example.com
-    type: toggle
+      - label: Privacy Notice
+        link: https://www.reacts.com/en/legal/privacy
+      - label: End User License Agreement
+        link: https://www.reacts.com/en/legal/terms-and-conditions
+    type: hover
 
 footer:
   copyrightText: © Koninklijke Philips N.V., 2004 - 2023. All rights reserved.
-  options:
-    - label: Contact
-      link: https://www.example.com
-    - label: About
-      link: https://www.example.com

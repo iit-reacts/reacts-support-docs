@@ -1,0 +1,123 @@
+---
+layout: default
+parent: Reacts for Windows
+lang: en
+id: "202719735"
+title: Instruction on how to import your own 3D objects to Reacts
+---
+In order to import a 3D object in Reacts go to _**Library**_ and choose _**3D objects**_, then option _**Import New 3D Objects**_:
+
+![](@assets/attachments/2014-10-20_11-59-33.png)
+
+Then navigate to a folder where your 3D objects are stored.
+
+### **File format and naming**
+
+.OBJ is the only 3D format accepted by the REACTS platform.
+
+You need all 3 files: .OBJ, .MTL and .JPG  to be in the _**same folder**_.
+
+The .MTL file must have the exact same name as the the .OBJ (ex.: helicopter.OBJ, helicopter.MTL)
+
+Your thumbnail must be in .JPG format, have the exact same name as the .OBJ and .MTL (ex.: helicopter.OBJ, helicopter.MTL, helicopter.JPG). Use a 85x51 pixels jpg for thumbnail for best result.
+
+_**Do**_ **_not_** use special characters or spaces in the name. We suggest keeping your textures in a sub folder. 
+
+Ex.: **_root (folder)_**
+
+                **model.obj**
+
+                **model.mtl**
+
+                **model.jpg (your thumbnail)**
+
+                **_maps (folder)_**
+
+                                **texture-a.jpg**
+
+                                **texture-b.jpg**
+
+                                **texture-c.jpg**
+
+**Orientation**
+
+For the Object to appear facing when imported to REACTS it must be facing RIGHT (X) with the head facing FRONT (-Y)
+
+![](@assets/attachments/3D_1.png)
+
+### **Grid Units**
+
+**3D Builder**  
+Must fit in 10x10x10 mm
+
+**3DS**  
+Must Fit in 2x2x2 units (x (-1, 1), y (-1, 1), z (-1, 1))  
+Grid unit set as 10cm
+
+**BLENDER**  
+Must fit in 30x30x30 units  
+Grid unit set as none - Scale =1
+
+**SOFTIMAGE**  
+Must fit in 20x20x20 units
+
+**MODO**   
+Must fit in 20x20x20 mm
+
+**C4D**  
+Must fit in 20x20x20 units/cm  
+Grid unit set as 1cm
+
+**Pivot point**
+
+In REACTS, the pivot point at a fixed point corresponding to (x=0, y=0, z=0) in your 3D application
+
+![](@assets/attachments/3D-2.png)
+
+You can establish a pivot point that does not match the center of the object as in the following example:
+
+![](@assets/attachments/3D-3.png)
+
+To do this you will need to reduce the size of the object so that the area (in RED) fits inside the zone (in GREEN). See image below
+
+![](@assets/attachments/3D-4.png)
+
+### **Textures**
+
+For the .MTL guidelines:
+
+With a text editor like SimpleText, Notepad, Notepad++ you might need to remove the following highlighted line (might look a bit different depending on 3D package used to export)
+
+ **newmtl nameOfMaterial**
+
+                **Ns 73.2912**
+
+                **Ni 1.5000**
+
+                **d 1.0000**
+
+                **Tr 0.0000**
+
+                **Tf 1.0000 1.0000 1.0000**
+
+                **illum 2**
+
+                **Ka 0.3000 0.3000 0.3000**
+
+                **Kd 0.7000 0.7000 0.7000**
+
+                **Ks 0.2940 0.2940 0.2940**
+
+                **Ke 0.0000 0.0000 0.0000**
+
+                **map\_Ka maps\\NameOfImage.jpg**
+
+                **map\_Kd maps\\NameOfImage.jpg**
+
+Make shure the paths are relative, not absolute. The engine does not support tiled textures.The less of image textures will result in a better performance.
+
+**Optimization**
+
+As for a number of polygons we suggest you stay under 50 000 for best performance. If needed you can go up to 200 000 but remember more polygons results in more CPU consumption.
+
+

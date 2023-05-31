@@ -1,0 +1,52 @@
+---
+layout: default
+parent: Windows release notes
+lang: en
+id: "115001585343"
+title: Version 2.5, released April 4, 2017
+---
+*   Fixed a Memory leak problem when running from RDP
+*   Added IPV6 Support
+*   Performance optimization and stabilization
+*   Files in the Reacts library and instant messaging can now be opened directly in Reacts
+*   Bug fixing
+*   Prioritization of UDP over TCP when UDP is allowed (1), resulting in a more optimal streaming experience.
+*   Optimization of peer-to-peer (end to end) security using DTLS-SRTP in replacement of the previous ZRTP and tunneled connection (2).
+
+ (1)   IMPORTANT: This change is only pertinent to our streaming services (see highlighted UDP). All the other services remain unchanged.
+
+ (2) We recommend that your firewall allow these connections to our servers:
+
+**Primary addresses**
+
+Outbound 69.90.8.44 streaming2.iitreacts.com (**UDP**/TCP 443)
+
+Outbound 69.90.8.45 vncserver2.iitreacts.com (TCP 443)
+
+Outbound 69.90.8.46 vncclient2.iitreacts.com (TCP 443)
+
+Outbound 69.90.9.87 relay.iitreacts.com: (**UDP**/TCP 443)
+
+Outbound 69.90.8.43 [https://signaling.iitreacts.com/](https://signaling.iitreacts.com/) (TCP 443)
+
+Outbound 69.90.8.42 [https://www.iitreacts.com/](https://www.iitreacts.com/) (TCP 443)
+
+Outbound 69.90.8.36 [https://svc.iitreacts.com/](https://svc.iitreacts.com/) (TCP 443)
+
+**Backup addresses:**
+
+Outbound 80.94.74.75 streaming2.iitreacts.com (**UDP**/TCP 443)
+
+Outbound 80.94.74.78 vncserver2.iitreacts.com (TCP 443)
+
+Outbound 80.94.74.77 vncclient2.iitreacts.com (TCP 443)
+
+Outbound 80.94.74.76 relay.iitreacts.com: (**UDP**/TCP 443)
+
+Outbound 80.94.74.73 [https://signaling.iitreacts.com/](https://signaling.iitreacts.com/) (TCP 443)
+
+Outbound 80.94.74.72 [https://www.iitreacts.com/](https://www.iitreacts.com/) (TCP 443)
+
+Outbound 80.94.74.74 [https://svc.iitreacts.com/](https://svc.iitreacts.com/) (TCP 443)
+
+
