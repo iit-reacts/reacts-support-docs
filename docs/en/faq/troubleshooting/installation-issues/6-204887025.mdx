@@ -5,13 +5,13 @@ lang: en
 id: "204887025"
 title: I receive «Can not connect to servers» or «Could not load file assembly Name.dll or one of its dependencies»
 ---
- **Note: Prior to following this instruction please make sure you don't have any Windows updates pending. If you do, install the updates first, restart your device and try to launch Reacts again**
+**Note: Prior to following this instruction please make sure you don't have any Windows updates pending. If you do, install the updates first, restart your device and try to launchReacts again**
 
- If you are getting «Cannot connect to server» or "Could not load file assembly "Name".dll" or one of its dependencies." error messages with your latest Reacts installation, issue might be caused by a missing or outdated Microsoft Windows components called **Visual C++ Redistributable Packages for Visual Studio 2013 and Visual C++ Redistributable Packages for Visual Studio 2019 or more:**
+If you are getting «Cannot connect to server» or "Could not load file assembly "Name".dll" or one of its dependencies."error messages with your latest Reacts installation, issue might be caused by a missing or outdated Microsoft Windows components called**Visual C++ Redistributable Packages for Visual Studio 2013 and Visual C++ Redistributable Packages for Visual Studio 2019 or more:**
 
 ![](@assets/attachments/Can_t_connect_to_servers_1.png)
 
-![](@assets/attachments/Can_t_connect_to_servers_2.png) 
+![](@assets/attachments/Can_t_connect_to_servers_2.png)
 
 To solve the problem go to the Windows Start Menu, click on Control Panel, Click on Programs and Features and find:
 
@@ -19,17 +19,17 @@ To solve the problem go to the Windows Start Menu, click on Control Panel, Click
 
 **"Microsoft Visual C ++ 2019 Redistributable (x64)/(x86) ..."** or **"Microsoft Visual C ++ Redistributable Packages for Visual Studio 2019"**
 
-Once you’ve found the Microsoft Redistributable, Right click on it and choose "Change" and then "Repair",  this should repair the component. Close and re-open Reacts, you should be able to connect now.
+Once you’ve found the Microsoft Redistributable, Right click on it and choose "Change" and then "Repair", this should repair the component. Close and re-open Reacts, you should be able to connect now.
 
 ![](@assets/attachments/Can_t_connect_to_servers_3.png)
 
-If the repair of the library does not work, you will need to uninstall: 
+If the repair of the library does not work, you will need to uninstall:
 
 **"Microsoft Visual C ++ 2013 Redistributable (x86) ..."** and/or **"Microsoft Visual C ++ Redistributable Packages for Visual Studio 2013"**
 
-**Microsoft Visual C ++ 2019 Redistributable (x86) ..."** and/or **"Microsoft Visual C ++ Redistributable Packages for Visual Studio 2019"** 
+**Microsoft Visual C ++ 2019 Redistributable (x86) ..."** and/or **"Microsoft Visual C ++ Redistributable Packages for Visual Studio 2019"**
 
-and re-install the components by going to the Microsoft website _(please note: you need both components):_ 
+and re-install the components by going to the Microsoft website_(please note: you need both components):_
 
 [http://www.microsoft.com/en-us/download/details.aspx?id=40784](http://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
@@ -41,7 +41,7 @@ Click on Download, select vcredist\_x64.exe and vcredist\_x86.exe and click the 
 
 If you cannot find neither **Micros****oft Visual C++ 2013 Redistributable** no **Microsoft Visual C++ 2015 Redistributable**, please visit the Microsoft website:
 
-[http://www.microsoft.com/en-us/download/details.aspx?id=40784](http://www.microsoft.com/en-us/download/details.aspx?id=40784) 
+[http://www.microsoft.com/en-us/download/details.aspx?id=40784](http://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
 [https://aka.ms/vs/17/release/vc\_redist.x86.exe](https://aka.ms/vs/17/release/vc_redist.x86.exe)
 
@@ -51,7 +51,7 @@ _Note: You need both components_
 
 Click on Download, select **vcredist\_x64.exe** and **vcredist\_x86.exe** and click the Next button and follow the installation instructions.
 
- ![](@assets/attachments/Can_t_connect_to_servers_4.png)
+![](@assets/attachments/Can_t_connect_to_servers_4.png)
 
 ![](@assets/attachments/Can_t_connect_to_servers_5.png)
 

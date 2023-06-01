@@ -2,7 +2,7 @@ paths:
   - name: assets
     path: assets
 
-iaFile: ./ia.yaml
+docsFolder: ./docs
 
 title: Reacts service documentation
 

@@ -2,10 +2,10 @@ architectures:
   - id: default
     name: Reacts service
     structure:
-      - path: /
+      - path: en/
         doc: index
 
-      - path: faq
+      - path: en/faq
         doc: en/faq/index
         subpaths:
           - path: general-questions
@@ -434,7 +434,7 @@ architectures:
                     doc: en/faq/troubleshooting/login-and-account-issues/4-4405001604765
                   - path: 5-4405001570717
                     doc: en/faq/troubleshooting/login-and-account-issues/5-4405001570717
-      - path: onboarding
+      - path: en/onboarding
         doc: en/onboarding/index
         subpaths:
           - path: 0-4404866577565
@@ -451,7 +451,7 @@ architectures:
             doc: en/onboarding/0-5205619132189
           - path: 1-202719815
             doc: en/onboarding/1-202719815
-      - path: security-and-privacy
+      - path: en/security-and-privacy
         doc: en/security-and-privacy/index
         subpaths:
           - path: 0-360046168211
@@ -460,6 +460,5 @@ architectures:
             doc: en/security-and-privacy/0-4404934496925
           - path: 0-4405382573213
             doc: en/security-and-privacy/0-4405382573213
-
-      - path: contact-us
+      - path: en/contact-us
         doc: en/contact-us
