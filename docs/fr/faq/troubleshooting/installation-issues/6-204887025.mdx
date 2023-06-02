@@ -1,0 +1,24 @@
+---
+parent: Dépannage
+id: "204887025-fr"
+title: Les messages «Reacts n'a pas pu accéder aux serveurs» ou « Impossible de charger le fichier d’assemblage Name.dll ou une de ses composantes »
+---
+[](@assets/attachments/Can_t_connect_to_servers_2.png)
+
+[](@assets/attachments/Can_t_connect_to_servers_1.png)
+
+**Remarque : Avant de suivre ces directives, veuillez vous assurer que vous n’avez pas de mise à jour Windows en attente. Le cas échéant, veuillez effectuer les mises à jour et redémarrer votre appareil, puis essayez d’exécuter Reacts à nouveau.**
+
+Si les messages « Reacts n'a pas pu accéder aux serveurs » ou « Impossible de charger le fichier d’assemblage Name.dll ou l’une de ses composantes (Could not load file assembly "Name".dll or one of it's dependancies) » s’affichent lorsque vous exécutez la plus récente version de Reacts, la composante intitulée **Visual C++ Redistributable Packages for Visual Studio 2013** peut être manquante ou expirée.
+
+Pour résoudre le problème, accédez au menu Démarrer de Windows, cliquez sur le panneau de configuration, puis sélectionnez Programmes et fonctionnalités où vous trouverez : « **Microsoft Visual C ++****2013 Redistributable (x86)...** » ou « **Microsoft Visual C ++ Redistributable Packages for Visual Studio 2013 »** dans la liste.
+
+Faites un clic droit sur la composante Microsoft 2013 Redistributable et sélectionnez l’option « Modifier », puis « Réparer » pour la réparer. Fermez Reacts et exécutez l’application à nouveau. Vous devriez maintenant être en mesure de vous connecter.
+
+Si la réparation de la bibliothèque ne fonctionne pas, vous devrez désinstaller la composante « **Microsoft Visual C ++ 2013 Redistributable (x86)...** » ou « **Microsoft Visual C ++ Redistributable Packages for Visual Studio 2013** » et la réinstaller à partir du site Web [http://www.microsoft.com/en-us/download/details.aspx?id=40784](http://www.microsoft.com/en-us/download/details.aspx?id=40784) de Microsoft, puis cliquer sur Télécharger (Download). Sélectionnez **vcredist\_x64.exe** et **vcredist\_x86.exe**, puis cliquez sur le bouton Suivant (Next) et suivez les directives d’installation.
+
+Si vous ne trouvez pas la composante **Microsoft Visual C++ 2013 Redistributable**, veuillez visiter le site Web de Microsoft au [http://www.microsoft.com/en-us/download/details.aspx?id=40784](http://www.microsoft.com/en-us/download/details.aspx?id=40784) et cliquez sur Télécharger (Download). Sélectionnez **vcredist\_x64.exe** et **vcredist\_x86.exe**, puis cliquez sur le bouton Suivant (Next) et suivez les directives d’installation.
+
+![](@assets/attachments/Can_t_connect_to_servers_fr1.png)
+
+![](@assets/attachments/Can_t_connect_to_servers_fr2.png)

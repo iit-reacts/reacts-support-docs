@@ -1,0 +1,53 @@
+---
+parent: Reacts for Windows
+id: "6007270326045-fr"
+title: Dépannage des problèmes de connectivité
+---
+**Dépannage des problèmes de connectivité**
+
+La majorité des problèmes de connectivités sont reliés aux règles de réseaux, de pare-feu ou de filtrages appliquées sur le réseau et/ou sur l'appareil utilisé. Si vos politiques locales l'autorisent, **un** **test simple pour savoir si le problème est lié à l'installation de Reacts ou aux règles sur le réseau ou l'appareil est de se connecter à un réseau public**. Si vous pouvez vous connecter à Reacts via un réseau public tel qu'un point d'accès mobile, le problème de connectivité est lié aux règles de réseau, de pare-feu ou de filtrages de votre réseau ou appareil.
+
+Voici les étapes de dépannage de base pour vous aider à résoudre certains problèmes classiques de connectivité. 
+
+**Étape 1 :** Vérifier que les paramètres de votre pare-feu et/ou de votre application de filtrage web autorisent Reacts à se connecter. Depuis votre fenêtre de navigation internet, essayer d'accéder à **[https://svc.iitreacts.com/api/echo](https://svc.iitreacts.com/api/echo).**
+Vous devriez voir un message semblable à :«{"Reacts Version":"","Body":"Echo OK!","Type":"System.String","Time":"2016-07-27T15:04:59.6325394Z","Id":"676b0cf1-e3ad-4cb7-bb9d-6076e2913efc"}».
+
+SI VOUS NE VOYEZ PAS UN MESSAGE SEMBLABLE À CELUI MENTIONNÉ PLUS HAUT, SUIVRE LES ÉTAPES 2 ET 3
+
+**Étape 2 :** S'assurer qu'il n'y a pas d'interférence entre votre anti-virus et Reacts qui pourrait empêcher l'application d'être démarrée. S'assurer que toutes les adresses IPs et tous les domaines listés ici [Reacts Installation Guide](({{ site.baseurl }}{% link en/onboarding/1-202719815.md %})) sont ajoutés à la liste blanche de votre réseau.
+
+SI VOUS N'ÊTES TOUJOURS PAS CAPABLE DE VOUS CONNECTER, SUIVRE L'ÉTAPE 3
+
+**Étape 3 :** Entrer les informations de votre proxy. Si vous vous connectez via un proxy, vous pourriez avoir besoin d'entrer les informations de votre proxy dans la fenêtre de paramètres Reacts.
+
+1\. Démarrer Reacts et cliquer sur "Paramètres réseau" sur la page de connexion.
+
+2\. Sélectionner "Manuel" et rentrer les informations de votre proxy.
+
+3\. Cliquer sur "Se connecter maintenant".
+
+![mceclip0.png](@assets/attachments/mceclip0_fr.png)
+
+![mceclip1.png](@assets/attachments/mceclip1_fr.png)
+
+SI VOUS N'ÊTES TOUJOURS PAS CAPABLE DE VOUS CONNECTER, SUIVRE L'ÉTAPE 4
+
+**Étape 4:** S'assurer que les règles de votre pare-feu ne bloquent pas la connexion de Reacts.
+
+Dans la barre de recherche Windows, taper "Pare-Feu et Protection Réseau" et cliquer sur le raccourci de Pare-Feu et Protection Réseau:
+
+![mceclip2.png](@assets/attachments/mceclip2.png)
+
+Dans la fenêtre de Pare-Feu et Protection Réseau, cliquer sur "Paramètres avancés"
+
+![mceclip3.png](@assets/attachments/mceclip3.png)
+
+Une fenêtre d'avertissement de "Sécurité Windows" apparaitra pour demander si vous autorisez à appliquer des changements sur votre appareil. Cliquer "Oui"
+
+Dans la fenêtre de paramètres avancés, cliquer sur "Règles de sorties" **(1)** et trouver "Reacts Client (fastlane) **(2)**
+
+**![mceclip4.png](@assets/attachments/mceclip4.png)**
+
+S'assurer les règles sortantes sont définies en conséquence.
+
+![mceclip5.png](@assets/attachments/mceclip5.png)

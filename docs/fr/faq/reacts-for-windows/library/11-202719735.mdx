@@ -1,0 +1,124 @@
+---
+parent: Reacts pour Windows
+id: "202719735-fr"
+title: Directives pour l’importation de vos objets 3D dans Reacts
+---
+Pour importer des objets 3D dans Reacts, accédez à la **Bibliothèque** et choisissez **objets 3D**, puis sélectionnez l’option **Importer de nouveaux objets 3D,** parcourez ensuite le dossier où sont stockés vos objets 3D.
+
+![](@assets/attachments/3D_1.png)
+
+### Format des fichiers et dénomination
+
+Le format .OBJ est le seul format 3D acceptable pour la plateforme Reacts.
+
+Le nom de votre objet (.obj), de votre matériau (.mtl) et de votre vignette\* (.jpg) doit être exactement le même et être stocké dans le même dossier (pas de caractères spéciaux et les espaces dans le nom). Nous vous recommandons de conserver vos textures dans un sous-dossier.
+
+p. ex. :
+
+**_root (dossier)_**
+
+                **model.obj**
+
+                **model.mtl**
+
+                **model.jpg (votre vignette)**
+
+                **_maps (dossier)_**
+
+                                **texture-a.jpg**
+
+                                **texture-b.jpg**
+
+                                **texture-c.jpg**
+
+Pour les vignettes, utilisez un format .jpg de 85 pixels x 51 pixels pour de meilleurs résultats.
+
+\*Note : les trois fichiers doivent être en place.
+
+### Orientation
+
+Pour que l’objet apparaisse de face lorsqu’il est importé dans Reacts, il doit faire face au côté DROIT (X) et la tête de l’objet doit faire face à l’AVANT (-Y).
+
+![](@assets/attachments/3D_1.png)
+
+### Unités de quadrillage
+
+**3D Builder**    
+
+Taille maximale de 10 x 10 x 10 m
+
+**3DS**
+
+Taille maximale de 2 x 2 x 2 unités **(x (-1, 1), y (-1, 1), z (-1, 1))**
+
+Une unité de quadrillage correspond à 10 cm
+
+**BLENDER**
+
+Taille maximale de 30 x 30 x 30 unités
+
+Unités de quadrillage neutres – échelle : 1 
+
+**SOFTIMAGE**
+
+Taille maximale de 20 x 20 x 20 unités 
+
+**MODO**    
+
+Taille maximale de 20 x 20 x 20 unités
+
+**C4D**
+
+Taille maximale de 20 x 20 x 20 unités/cm
+
+Une unité de quadrillage correspond à 1 cm
+
+### Point pivot
+
+Dans Reacts, le point pivot fixe correspond aux coordonnées (x=0, y=0, z=0) dans votre application 3D
+
+![](@assets/attachments/3D-2.png)
+
+Vous pouvez établir un point pivot qui ne correspond pas au centre de l’objet, comme dans l’exemple suivant:
+
+![](@assets/attachments/3D-3.png)
+
+Pour ce faire, vous devrez réduire la taille de l’objet pour être en mesure de placer l’aire (en rouge) à l’intérieur de la zone (en vert). Voir l’image ci-dessous.
+
+![](@assets/attachments/3D-4.png)
+
+### Textures
+
+Le fichier .MTL doit avoir exactement le même nom que le fichier .OBJ et être stocké dans le même dossier. (p. ex. : helicopter.OBJ et helicopter.MTL). Au moyen d’un éditeur de texte comme SimpleText, Notepad, Notepad++ vous pourriez devoir retirer la ligne surlignée ci-dessous (la présentation pourrait varier en fonction de l’ensemble 3D utilisé pour l’exportation).
+
+**newmtl nameOfMaterial**
+
+                **Ns 73.2912**
+
+                **Ni 1.5000**
+
+                **d 1.0000**
+
+                **Tr 0.0000**
+
+                **Tf 1.0000 1.0000 1.0000**
+
+                **illum 2**
+
+                **Ka 0.3000 0.3000 0.3000**
+
+                **Kd 0.7000 0.7000 0.7000**
+
+                **Ks 0.2940 0.2940 0.2940**
+
+                **Ke 0.0000 0.0000 0.0000**
+
+                **map\_Ka maps\\NameOfImage.jpg**
+
+                **map\_Kd maps\\NameOfImage.jpg**
+
+Assurez-vous que tous les chemins sont relatifs, et non absolus. Le moteur ne prend pas en charge les textures en carrelage. Le rendement sera supérieur si vous utilisez un minimum de textures.
+
+### Optimisation
+
+Pour ce qui est du nombre de polygones, nous vous recommandons de ne pas dépasser 50 000 pour un meilleur rendement. Au besoin, vous pouvez utiliser jusqu’à 200 000 polygones, mais n’oubliez pas qu’un grand nombre de polygones consomme davantage d’UC.

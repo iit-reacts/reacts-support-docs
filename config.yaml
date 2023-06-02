@@ -13,7 +13,6 @@ htmlCustomization:
 header:
   - label: Reacts applications
     position: left
-    link: https://webapp.reacts.com/
     options:
       - label: Web App
         link: https://webapp.reacts.com/
@@ -27,6 +26,14 @@ header:
         link: https://www.reacts.com/en/legal/privacy
       - label: End User License Agreement
         link: https://www.reacts.com/en/legal/terms-and-conditions
+    type: hover
+  - label: Language
+    position: right
+    options:
+      - label: English
+        link: /en
+      - label: French
+        link: /fr
     type: hover
 
 footer:

@@ -1,0 +1,48 @@
+---
+parent: Windows notes de mise à jours
+id: "115001585343-fr"
+title: Version 2.5, déployée le 4 avril 2017
+---
+*   Correction d'un problème de fuite de mémoire lors de l'exécution à partir de RDP
+*   Ajout du support IPV6
+*   Optimisation et stabilisation des performances
+*   Il est maintenant possible d’ouvrir les fichiers de la bibliothèque et de la messagerie instantanée directement à partir de Reacts
+*   Corrections de bogues
+*   Priorisation du protocol UDP sur TCP lorsque le protocol UDP est autorisé (1), ce qui donne une expérience de streaming plus optimale.
+*   Optimisation de connexion audio / vidéo UDP sécurisée en DTLS-SRTP pour les connexion  poste à poste. (2)
+
+ (1)    IMPORTANT: Cette modification n'est pertinente que pour nos services de diffusion vidéo en continu (voir UDP en surbrillance). Tous les autres services restent inchangés. Voir les quotas de pare-feu recommandés ci-dessous
+
+ (2)    Nous recommandons que votre pare-feu permette ces connexions à nos serveurs :
+
+**Adresses principales**
+
+Sortant 69.90.8.44 streaming2.iitreacts.com (**_UDP_** / TCP 443)
+
+Sortant 69.90.8.45 vncserver2.iitreacts.com (TCP 443)
+
+Sortant 69.90.8.46 vncclient2.iitreacts.com (TCP 443)
+
+Sortant 69.90.9.87 relay.iitreacts.com: (**_UDP_** / TCP 443)
+
+Outbound 69.90.8.43 [https://signaling.iitreacts.com/](https://signaling.iitreacts.com/) (TCP 443)
+
+Outbound 69.90.8.42 [https://www.iitreacts.com/](https://www.iitreacts.com/) (TCP 443)
+
+Outbound 69.90.8.36 [https://svc.iitreacts.com/](https://svc.iitreacts.com/) (TCP 443)
+
+**Adresses de sauvegarde:**
+
+Sortie 80.94.74.75 streaming2.iitreacts.com (**_UDP_** / TCP 443)
+
+Outbound 80.94.74.78 vncserver2.iitreacts.com (TCP 443)
+
+Outbound 80.94.74.77 vncclient2.iitreacts.com (TCP 443)
+
+Outbound 80.94.74.76 relay.iitreacts.com: (**_UDP_** / TCP 443)
+
+Outbound 80.94.74.73 [https://signaling.iitreacts.com/](https://signaling.iitreacts.com/) (TCP 443)
+
+Outbound 80.94.74.72 [https://www.iitreacts.com/](https://www.iitreacts.com/) (TCP 443)
+
+Outbound 80.94.74.74 [https://svc.iitreacts.com/](https://svc.iitreacts.com/) (TCP 443)
