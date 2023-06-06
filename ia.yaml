@@ -2,8 +2,913 @@ architectures:
   - id: default
     name: Reacts service
     structure:
+      - path: /
+        doc: en/index
       - path: en/
         doc: en/index
 
+      - path: en/faq
+        doc: en/faq/index
+        subpaths:
+          - path: general-questions
+            doc: en/faq/general-questions/index
+            subpaths:
+              - path: 0-360000792843
+                doc: en/faq/general-questions/0-360000792843
+              - path: 0-360013969991
+                doc: en/faq/general-questions/0-360013969991
+              - path: 0-360030179691
+                doc: en/faq/general-questions/0-360030179691
+              - path: 0-4404927848221
+                doc: en/faq/general-questions/0-4404927848221
+              - path: 0-4415798952980
+                doc: en/faq/general-questions/0-4415798952980
+              - path: 0-4644713417629
+                doc: en/faq/general-questions/0-4644713417629
+              - path: 0-4654434191901
+                doc: en/faq/general-questions/0-4654434191901
+              - path: 0-4700700359325
+                doc: en/faq/general-questions/0-4700700359325
+              - path: 0-4864014737565
+                doc: en/faq/general-questions/0-4864014737565
+              - path: 0-5094324750109
+                doc: en/faq/general-questions/0-5094324750109
+              - path: 0-5122261382813
+                doc: en/faq/general-questions/0-5122261382813
+              - path: 0-5932300032925
+                doc: en/faq/general-questions/0-5932300032925
+              - path: 0-6267387421213
+                doc: en/faq/general-questions/0-6267387421213
+              - path: 1-4404858552861
+                doc: en/faq/general-questions/1-4404858552861
+              - path: 2-202764365
+                doc: en/faq/general-questions/2-202764365
+              - path: 2-360000875363
+                doc: en/faq/general-questions/2-360000875363
+              - path: 2-5206528886429
+                doc: en/faq/general-questions/2-5206528886429
+              - path: 3-4405018020381
+                doc: en/faq/general-questions/3-4405018020381
+              - path: 3-5206508806941
+                doc: en/faq/general-questions/3-5206508806941
+              - path: 4-4405018087453
+                doc: en/faq/general-questions/4-4405018087453
+              - path: 5-360052292392
+                doc: en/faq/general-questions/5-360052292392
+              - path: 7-360000792683
+                doc: en/faq/general-questions/7-360000792683
+          - path: reacts-dashboard
+            doc: en/faq/reacts-dashboard/index
+            subpaths:
+              - path: general-use
+                title: General Use
+                doc: en/faq/reacts-dashboard/general-use/0-360050582152
+                subpaths:
+                  - path: 0-360050582152
+                    doc: en/faq/reacts-dashboard/general-use/0-360050582152
+                  - path: 1-360050558791
+                    doc: en/faq/reacts-dashboard/general-use/1-360050558791
+                  - path: 2-360050676951
+                    doc: en/faq/reacts-dashboard/general-use/2-360050676951
+                  - path: 3-360050040292
+                    doc: en/faq/reacts-dashboard/general-use/3-360050040292
+                  - path: 4-360050292852
+                    doc: en/faq/reacts-dashboard/general-use/4-360050292852
+                  - path: 5-4407861805844
+                    doc: en/faq/reacts-dashboard/general-use/5-4407861805844
+                  - path: 6-360050553271
+                    doc: en/faq/reacts-dashboard/general-use/6-360050553271
+                  - path: 8-360050642531
+                    doc: en/faq/reacts-dashboard/general-use/8-360050642531
+              - path: pro-subscription
+                title: Pro Subscription
+                subpaths:
+                  - path: 0-360050610651
+                    doc: en/faq/reacts-dashboard/pro-subscription/0-360050610651
+                  - path: 2-360050287992
+                    doc: en/faq/reacts-dashboard/pro-subscription/2-360050287992
+                  - path: 7-360057411051
+                    doc: en/faq/reacts-dashboard/pro-subscription/7-360057411051
+                    subpaths:
+                      - path: 0-360056779292
+                        doc: en/faq/reacts-dashboard/release-notes/0-360056779292
+                      - path: 0-4407291287956
+                        doc: en/faq/reacts-dashboard/release-notes/0-4407291287956
+                      - path: 0-5932676795165
+                        doc: en/faq/reacts-dashboard/release-notes/0-5932676795165
+                  - path: ultrasound-collaboration-live-users
+                    title: Ultrasound Collaboration Live Users
+                    subpaths:
+                      - path: 0-360050155812
+                        doc: en/faq/reacts-dashboard/ultrasound-collaboration-live-users/0-360050155812
+                      - path: 1-360050815211
+                        doc: en/faq/reacts-dashboard/ultrasound-collaboration-live-users/1-360050815211
+                      - path: 2-8365378105501
+                        doc: en/faq/reacts-dashboard/ultrasound-collaboration-live-users/2-8365378105501
+          - path: reacts-for-androids
+            doc: en/faq/reacts-for-androids/index
+            subpaths:
+              - path: general-use
+                title: General Use
+                subpaths:
+                  - path: 0-360025754951
+                    doc: en/faq/reacts-for-androids/general-use/0-360025754951
+              - path: installation-&-updates
+                title: Installation & Updates
+                subpaths:
+                  - path: 2-360039298791
+                    doc: en/faq/reacts-for-androids/installation-&-updates/2-360039298791
+              - path: release-notes
+                title: Release Notes
+                subpaths:
+                  - path: 0-360025756511
+                    doc: en/faq/reacts-for-androids/release-notes/0-360025756511
+                  - path: 0-360030592432
+                    doc: en/faq/reacts-for-androids/release-notes/0-360030592432
+                  - path: 0-360036977052
+                    doc: en/faq/reacts-for-androids/release-notes/0-360036977052
+                  - path: 0-360037349671
+                    doc: en/faq/reacts-for-androids/release-notes/0-360037349671
+                  - path: 0-360056775152
+                    doc: en/faq/reacts-for-androids/release-notes/0-360056775152
+                  - path: 0-4407299308052
+                    doc: en/faq/reacts-for-androids/release-notes/0-4407299308052
+                  - path: 0-5932619193501
+                    doc: en/faq/reacts-for-androids/release-notes/0-5932619193501
+                  - path: 0-8150887272733
+                    doc: en/faq/reacts-for-androids/release-notes/0-8150887272733
+                  - path: 0-9350231108637
+                    doc: en/faq/reacts-for-androids/release-notes/0-9350231108637
+              - path: troubleshooting
+                title: Troubleshooting
+                subpaths:
+                  - path: 0-360039691431
+                    doc: en/faq/reacts-for-androids/troubleshooting/0-360039691431
+          - path: reacts-for-ios
+            doc: en/faq/reacts-for-ios/index
+            subpaths:
+              - path: 0-204739759
+                doc: en/faq/reacts-for-ios/0-204739759
+              - path: general-use
+                title: General Use
+                subpaths:
+                  - path: 0-360059662712
+                    doc: en/faq/reacts-for-ios/general-use/0-360059662712
+                  - path: 0-5206396082077
+                    doc: en/faq/reacts-for-ios/general-use/0-5206396082077
+              - path: installation-&-updates
+                title: Installation & Updates
+                subpaths:
+                  - path: 1-360039297591
+                    doc: en/faq/reacts-for-ios/installation-&-updates/1-360039297591
+              - path: instant-messaging
+                title: Instant Messaging
+                subpaths:
+                  - path: 0-4404715456157
+                    doc: en/faq/reacts-for-ios/instant-messaging/0-4404715456157
+              - path: release-notes
+                title: Release Notes
+                subpaths:
+                  - path: 0-4407291018260
+                    doc: en/faq/reacts-for-ios/release-notes/0-4407291018260
+                  - path: 0-5932582186013
+                    doc: en/faq/reacts-for-ios/release-notes/0-5932582186013
+                  - path: 0-8150843416093
+                    doc: en/faq/reacts-for-ios/release-notes/0-8150843416093
+                  - path: 0-9350249322141
+                    doc: en/faq/reacts-for-ios/release-notes/0-9350249322141
+                  - path: 1-360045765011
+                    doc: en/faq/reacts-for-ios/release-notes/1-360045765011
+                  - path: 10-360016741651
+                    doc: en/faq/reacts-for-ios/release-notes/10-360016741651
+                  - path: 11-360016468292
+                    doc: en/faq/reacts-for-ios/release-notes/11-360016468292
+                  - path: 12-360000825123
+                    doc: en/faq/reacts-for-ios/release-notes/12-360000825123
+                  - path: 13-360000412603
+                    doc: en/faq/reacts-for-ios/release-notes/13-360000412603
+                  - path: 14-360000391843
+                    doc: en/faq/reacts-for-ios/release-notes/14-360000391843
+                  - path: 15-115005439263
+                    doc: en/faq/reacts-for-ios/release-notes/15-115005439263
+                  - path: 16-115003969443
+                    doc: en/faq/reacts-for-ios/release-notes/16-115003969443
+                  - path: 17-115003969383
+                    doc: en/faq/reacts-for-ios/release-notes/17-115003969383
+                  - path: 2-360044663272
+                    doc: en/faq/reacts-for-ios/release-notes/2-360044663272
+                  - path: 3-360045110951
+                    doc: en/faq/reacts-for-ios/release-notes/3-360045110951
+                  - path: 4-360038278412
+                    doc: en/faq/reacts-for-ios/release-notes/4-360038278412
+                  - path: 5-360033196912
+                    doc: en/faq/reacts-for-ios/release-notes/5-360033196912
+                  - path: 6-360030592212
+                    doc: en/faq/reacts-for-ios/release-notes/6-360030592212
+                  - path: 7-360028139032
+                    doc: en/faq/reacts-for-ios/release-notes/7-360028139032
+                  - path: 8-360024537931
+                    doc: en/faq/reacts-for-ios/release-notes/8-360024537931
+                  - path: 9-360020741732
+                    doc: en/faq/reacts-for-ios/release-notes/9-360020741732
+          - path: reacts-for-webapp
+            doc: en/faq/reacts-for-webapp/index
+            subpaths:
+              - path: general-use
+                title: General Use
+                subpaths:
+                  - path: 0-5206134495901
+                    doc: en/faq/reacts-for-webapp/general-use/0-5206134495901
+                  - path: 1-360001117426
+                    doc: en/faq/reacts-for-webapp/general-use/1-360001117426
+                  - path: 2-360030178411
+                    doc: en/faq/reacts-for-webapp/general-use/2-360030178411
+                  - path: 3-360036048352
+                    doc: en/faq/reacts-for-webapp/general-use/3-360036048352
+                  - path: 4-360034575272
+                    doc: en/faq/reacts-for-webapp/general-use/4-360034575272
+                  - path: 5-5206338424221
+                    doc: en/faq/reacts-for-webapp/general-use/5-5206338424221
+              - path: release-notes
+                title: Release Notes
+                subpaths:
+                  - path: 0-10033462572957
+                    doc: en/faq/reacts-for-webapp/release-notes/0-10033462572957
+                  - path: 0-360024537911
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360024537911
+                  - path: 0-360028434271
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360028434271
+                  - path: 0-360030592072
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360030592072
+                  - path: 0-360033561591
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360033561591
+                  - path: 0-360038659151
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360038659151
+                  - path: 0-360045110451
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360045110451
+                  - path: 0-360045111071
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360045111071
+                  - path: 0-360045339192
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360045339192
+                  - path: 0-360057231831
+                    doc: en/faq/reacts-for-webapp/release-notes/0-360057231831
+                  - path: 0-4407299356180
+                    doc: en/faq/reacts-for-webapp/release-notes/0-4407299356180
+                  - path: 0-5932638128157
+                    doc: en/faq/reacts-for-webapp/release-notes/0-5932638128157
+                  - path: 0-8150891138589
+                    doc: en/faq/reacts-for-webapp/release-notes/0-8150891138589
+                  - path: 0-9350150789405
+                    doc: en/faq/reacts-for-webapp/release-notes/0-9350150789405
+              - path: troubleshooting
+                title: Troubleshooting
+                subpaths:
+                  - path: 0-360016509612
+                    doc: en/faq/reacts-for-webapp/troubleshooting/0-360016509612
+          - path: reacts-for-windows
+            doc: en/faq/reacts-for-windows/index
+            subpaths:
+              - path: general-use
+                title: General Use
+                subpaths:
+                  - path: 0-201868629
+                    doc: en/faq/reacts-for-windows/general-use/0-201868629
+                  - path: 0-5070375178013
+                    doc: en/faq/reacts-for-windows/general-use/0-5070375178013
+                  - path: 1-203057699
+                    doc: en/faq/reacts-for-windows/general-use/1-203057699
+                  - path: 1-360036008132
+                    doc: en/faq/reacts-for-windows/general-use/1-360036008132
+                  - path: 2-201850929
+                    doc: en/faq/reacts-for-windows/general-use/2-201850929
+                  - path: 3-202764395
+                    doc: en/faq/reacts-for-windows/general-use/3-202764395
+                  - path: 4-205132715
+                    doc: en/faq/reacts-for-windows/general-use/4-205132715
+              - path: installation-&-updates
+                title: Installation & Updates
+                subpaths:
+                  - path: 0-205483525
+                    doc: en/faq/reacts-for-windows/installation-&-updates/0-205483525
+                  - path: 1-360039296791
+                    doc: en/faq/reacts-for-windows/installation-&-updates/1-360039296791
+                  - path: 2-360000942083
+                    doc: en/faq/reacts-for-windows/installation-&-updates/2-360000942083
+              - path: library
+                title: Library
+                subpaths:
+                  - path: 11-202719735
+                    doc: en/faq/reacts-for-windows/library/11-202719735
+                  - path: 2-202719535
+                    doc: en/faq/reacts-for-windows/library/2-202719535
+              - path: release-notes
+                title: Release Notes
+                subpaths:
+                  - path: 0-4407299333652
+                    doc: en/faq/reacts-for-windows/release-notes/0-4407299333652
+                  - path: 0-5073274000925
+                    doc: en/faq/reacts-for-windows/release-notes/0-5073274000925
+                  - path: 0-5932511453725
+                    doc: en/faq/reacts-for-windows/release-notes/0-5932511453725
+                  - path: 0-8150708439837
+                    doc: en/faq/reacts-for-windows/release-notes/0-8150708439837
+                  - path: 0-9350068938141
+                    doc: en/faq/reacts-for-windows/release-notes/0-9350068938141
+                  - path: 1-360057231631
+                    doc: en/faq/reacts-for-windows/release-notes/1-360057231631
+                  - path: 10-360024537291
+                    doc: en/faq/reacts-for-windows/release-notes/10-360024537291
+                  - path: 11-360020741492
+                    doc: en/faq/reacts-for-windows/release-notes/11-360020741492
+                  - path: 12-360016741431
+                    doc: en/faq/reacts-for-windows/release-notes/12-360016741431
+                  - path: 13-360001225406
+                    doc: en/faq/reacts-for-windows/release-notes/13-360001225406
+                  - path: 14-360000831286
+                    doc: en/faq/reacts-for-windows/release-notes/14-360000831286
+                  - path: 15-360000412666
+                    doc: en/faq/reacts-for-windows/release-notes/15-360000412666
+                  - path: 16-360000390326
+                    doc: en/faq/reacts-for-windows/release-notes/16-360000390326
+                  - path: 17-115005441646
+                    doc: en/faq/reacts-for-windows/release-notes/17-115005441646
+                  - path: 18-115003984726
+                    doc: en/faq/reacts-for-windows/release-notes/18-115003984726
+                  - path: 19-115003969223
+                    doc: en/faq/reacts-for-windows/release-notes/19-115003969223
+                  - path: 2-360045338312
+                    doc: en/faq/reacts-for-windows/release-notes/2-360045338312
+                  - path: 20-115001585343
+                    doc: en/faq/reacts-for-windows/release-notes/20-115001585343
+                  - path: 3-360044663252
+                    doc: en/faq/reacts-for-windows/release-notes/3-360044663252
+                  - path: 5-360045110551
+                    doc: en/faq/reacts-for-windows/release-notes/5-360045110551
+                  - path: 6-360038658551
+                    doc: en/faq/reacts-for-windows/release-notes/6-360038658551
+                  - path: 7-360033562611
+                    doc: en/faq/reacts-for-windows/release-notes/7-360033562611
+                  - path: 8-360030929211
+                    doc: en/faq/reacts-for-windows/release-notes/8-360030929211
+                  - path: 9-360028430531
+                    doc: en/faq/reacts-for-windows/release-notes/9-360028430531
+              - path: session
+                title: Session
+                subpaths:
+                  - path: 0-202764345
+                    doc: en/faq/reacts-for-windows/session/0-202764345
+                  - path: 1-201916699
+                    doc: en/faq/reacts-for-windows/session/1-201916699
+                  - path: 10-202764225
+                    doc: en/faq/reacts-for-windows/session/10-202764225
+                  - path: 11-360026889332
+                    doc: en/faq/reacts-for-windows/session/11-360026889332
+                  - path: 12-202764385
+                    doc: en/faq/reacts-for-windows/session/12-202764385
+                  - path: 13-202056269
+                    doc: en/faq/reacts-for-windows/session/13-202056269
+                  - path: 2-201916689
+                    doc: en/faq/reacts-for-windows/session/2-201916689
+                  - path: 3-202764265
+                    doc: en/faq/reacts-for-windows/session/3-202764265
+                  - path: 4-202764325
+                    doc: en/faq/reacts-for-windows/session/4-202764325
+                  - path: 5-201916539
+                    doc: en/faq/reacts-for-windows/session/5-201916539
+                  - path: 6-203318725
+                    doc: en/faq/reacts-for-windows/session/6-203318725
+                  - path: 8-201916629
+                    doc: en/faq/reacts-for-windows/session/8-201916629
+                  - path: 9-201872959
+                    doc: en/faq/reacts-for-windows/session/9-201872959
+              - path: troubleshooting
+                title: Troubleshooting
+                subpaths:
+                  - path: 0-202816119
+                    doc: en/faq/reacts-for-windows/troubleshooting/0-202816119
+                  - path: 0-205383685
+                    doc: en/faq/reacts-for-windows/troubleshooting/0-205383685
+                  - path: 0-6007270326045
+                    doc: en/faq/reacts-for-windows/troubleshooting/0-6007270326045
+                  - path: 1-205942445
+                    doc: en/faq/reacts-for-windows/troubleshooting/1-205942445
+                  - path: 2-202815779
+                    doc: en/faq/reacts-for-windows/troubleshooting/2-202815779
+                  - path: 3-205965646
+                    doc: en/faq/reacts-for-windows/troubleshooting/3-205965646
+                  - path: 4-202719825
+                    doc: en/faq/reacts-for-windows/troubleshooting/4-202719825
+              - path: video-reacts-for-windows-video-tutorial
+                doc: en/faq/reacts-for-windows/video-reacts-for-windows-video-tutorial
+          - path: troubleshooting
+            doc: en/faq/troubleshooting/index
+            subpaths:
+              - path: connectivity-issues
+                title: Connectivity Issues
+                subpaths:
+                  - path: 2-204968219
+                    doc: en/faq/troubleshooting/connectivity-issues/2-204968219
+              - path: installation-issues
+                title: Installation Issues
+                subpaths:
+                  - path: 0-115004770643
+                    doc: en/faq/troubleshooting/installation-issues/0-115004770643
+                  - path: 5-206349936
+                    doc: en/faq/troubleshooting/installation-issues/5-206349936
+                  - path: 6-204887025
+                    doc: en/faq/troubleshooting/installation-issues/6-204887025
+                  - path: 9-204116849
+                    doc: en/faq/troubleshooting/installation-issues/9-204116849
+              - path: login-and-account-issues
+                title: Login and Account Issues
+                subpaths:
+                  - path: 0-4405017896989
+                    doc: en/faq/troubleshooting/login-and-account-issues/0-4405017896989
+                  - path: 0-5152561693341
+                    doc: en/faq/troubleshooting/login-and-account-issues/0-5152561693341
+                  - path: 1-4405017827485
+                    doc: en/faq/troubleshooting/login-and-account-issues/1-4405017827485
+                  - path: 2-360000793343
+                    doc: en/faq/troubleshooting/login-and-account-issues/2-360000793343
+                  - path: 3-4405009630749
+                    doc: en/faq/troubleshooting/login-and-account-issues/3-4405009630749
+                  - path: 4-4405001604765
+                    doc: en/faq/troubleshooting/login-and-account-issues/4-4405001604765
+                  - path: 5-4405001570717
+                    doc: en/faq/troubleshooting/login-and-account-issues/5-4405001570717
+      - path: en/onboarding
+        doc: en/onboarding/index
+        subpaths:
+          - path: 0-4404866577565
+            doc: en/onboarding/0-4404866577565
+          - path: 0-4415762446612
+            doc: en/onboarding/0-4415762446612
+          - path: 0-4415797460500
+            doc: en/onboarding/0-4415797460500
+          - path: 0-4415797798420
+            doc: en/onboarding/0-4415797798420
+          - path: 0-5203907954845
+            doc: en/onboarding/0-5203907954845
+          - path: 0-5205619132189
+            doc: en/onboarding/0-5205619132189
+          - path: 1-202719815
+            doc: en/onboarding/1-202719815
+      - path: en/security-and-privacy
+        doc: en/security-and-privacy/index
+        subpaths:
+          - path: 0-360046168211
+            doc: en/security-and-privacy/0-360046168211
+          - path: 0-4404934496925
+            doc: en/security-and-privacy/0-4404934496925
+          - path: 0-4405382573213
+            doc: en/security-and-privacy/0-4405382573213
+      - path: en/contact-us
+        doc: en/contact-us
+
       - path: fr/
         doc: fr/index
+
+      - path: fr/faq
+        doc: fr/faq/index
+        subpaths:
+          - path: general-questions
+            doc: fr/faq/general-questions/index
+            subpaths:
+              - path: 0-360000792843
+                doc: fr/faq/general-questions/0-360000792843
+              - path: 0-360030179691
+                doc: fr/faq/general-questions/0-360030179691
+              - path: 0-4404927848221
+                doc: fr/faq/general-questions/0-4404927848221
+              - path: 0-4415798952980
+                doc: fr/faq/general-questions/0-4415798952980
+              - path: 0-4644713417629
+                doc: fr/faq/general-questions/0-4644713417629
+              - path: 0-4654434191901
+                doc: fr/faq/general-questions/0-4654434191901
+              - path: 0-4700700359325
+                doc: fr/faq/general-questions/0-4700700359325
+              - path: 0-4864014737565
+                doc: fr/faq/general-questions/0-4864014737565
+              - path: 0-5094324750109
+                doc: fr/faq/general-questions/0-5094324750109
+              - path: 0-5122261382813
+                doc: fr/faq/general-questions/0-5122261382813
+              - path: 0-5932300032925
+                doc: fr/faq/general-questions/0-5932300032925
+              - path: 0-6267387421213
+                doc: fr/faq/general-questions/0-6267387421213
+              - path: 1-4404858552861
+                doc: fr/faq/general-questions/1-4404858552861
+              - path: 2-202764365
+                doc: fr/faq/general-questions/2-202764365
+              - path: 2-360000875363
+                doc: fr/faq/general-questions/2-360000875363
+              - path: 2-5206528886429
+                doc: fr/faq/general-questions/2-5206528886429
+              - path: 3-4405018020381
+                doc: fr/faq/general-questions/3-4405018020381
+              - path: 3-5206508806941
+                doc: fr/faq/general-questions/3-5206508806941
+              - path: 4-4405018087453
+                doc: fr/faq/general-questions/4-4405018087453
+              - path: 5-360052292392
+                doc: fr/faq/general-questions/5-360052292392
+              - path: 7-360000792683
+                doc: fr/faq/general-questions/7-360000792683
+          - path: reacts-dashboard
+            doc: fr/faq/reacts-dashboard/index
+            subpaths:
+              - path: general-use
+                title: Utilisation générale
+                doc: fr/faq/reacts-dashboard/general-use/0-360050582152
+                subpaths:
+                  - path: 0-360050582152
+                    doc: fr/faq/reacts-dashboard/general-use/0-360050582152
+                  - path: 1-360050558791
+                    doc: fr/faq/reacts-dashboard/general-use/1-360050558791
+                  - path: 2-360050676951
+                    doc: fr/faq/reacts-dashboard/general-use/2-360050676951
+                  - path: 3-360050040292
+                    doc: fr/faq/reacts-dashboard/general-use/3-360050040292
+                  - path: 4-360050292852
+                    doc: fr/faq/reacts-dashboard/general-use/4-360050292852
+                  - path: 5-4407861805844
+                    doc: fr/faq/reacts-dashboard/general-use/5-4407861805844
+                  - path: 6-360050553271
+                    doc: fr/faq/reacts-dashboard/general-use/6-360050553271
+                  - path: 8-360050642531
+                    doc: fr/faq/reacts-dashboard/general-use/8-360050642531
+              - path: pro-subscription
+                title: Abonnement Pro
+                subpaths:
+                  - path: 0-360050610651
+                    doc: fr/faq/reacts-dashboard/pro-subscription/0-360050610651
+                  - path: 2-360050287992
+                    doc: fr/faq/reacts-dashboard/pro-subscription/2-360050287992
+                  - path: 7-360057411051
+                    doc: fr/faq/reacts-dashboard/pro-subscription/7-360057411051
+                    subpaths:
+                      - path: 0-360056779292
+                        doc: fr/faq/reacts-dashboard/release-notes/0-360056779292
+                      - path: 0-4407291287956
+                        doc: fr/faq/reacts-dashboard/release-notes/0-4407291287956
+                      - path: 0-5932676795165
+                        doc: fr/faq/reacts-dashboard/release-notes/0-5932676795165
+                  - path: ultrasound-collaboration-live-users
+                    title: Utilisateurs Ultrasound Collaboration Live
+                    subpaths:
+                      - path: 0-360050155812
+                        doc: fr/faq/reacts-dashboard/ultrasound-collaboration-live-users/0-360050155812
+                      - path: 1-360050815211
+                        doc: fr/faq/reacts-dashboard/ultrasound-collaboration-live-users/1-360050815211
+          - path: reacts-for-androids
+            doc: fr/faq/reacts-for-androids/index
+            subpaths:
+              - path: general-use
+                title: Utilisation générale
+                subpaths:
+                  - path: 0-360025754951
+                    doc: fr/faq/reacts-for-androids/general-use/0-360025754951
+              - path: installation-&-updates
+                title: Installation et Mise à jour
+                subpaths:
+                  - path: 2-360039298791
+                    doc: fr/faq/reacts-for-androids/installation-&-updates/2-360039298791
+              - path: release-notes
+                title: Notes de Mise à Jour
+                subpaths:
+                  - path: 0-360025756511
+                    doc: fr/faq/reacts-for-androids/release-notes/0-360025756511
+                  - path: 0-360030592432
+                    doc: fr/faq/reacts-for-androids/release-notes/0-360030592432
+                  - path: 0-360036977052
+                    doc: fr/faq/reacts-for-androids/release-notes/0-360036977052
+                  - path: 0-360037349671
+                    doc: fr/faq/reacts-for-androids/release-notes/0-360037349671
+                  - path: 0-360056775152
+                    doc: fr/faq/reacts-for-androids/release-notes/0-360056775152
+                  - path: 0-5932619193501
+                    doc: fr/faq/reacts-for-androids/release-notes/0-5932619193501
+                  - path: 0-8150887272733
+                    doc: fr/faq/reacts-for-androids/release-notes/0-8150887272733
+                  - path: 0-9350231108637
+                    doc: fr/faq/reacts-for-androids/release-notes/0-9350231108637
+              - path: troubleshooting
+                title: Dépannage
+                subpaths:
+                  - path: 0-360039691431
+                    doc: fr/faq/reacts-for-androids/troubleshooting/0-360039691431
+          - path: reacts-for-ios
+            doc: fr/faq/reacts-for-ios/index
+            subpaths:
+              - path: 0-204739759
+                doc: fr/faq/reacts-for-ios/0-204739759
+              - path: general-use
+                title: Utilisation générale
+                subpaths:
+                  - path: 0-360059662712
+                    doc: fr/faq/reacts-for-ios/general-use/0-360059662712
+                  - path: 0-5206396082077
+                    doc: fr/faq/reacts-for-ios/general-use/0-5206396082077
+              - path: installation-&-updates
+                title: Installation et Mise à jour
+                subpaths:
+                  - path: 1-360039297591
+                    doc: fr/faq/reacts-for-ios/installation-&-updates/1-360039297591
+              - path: instant-messaging
+                title: Messagerie instantanée
+                subpaths:
+                  - path: 0-4404715456157
+                    doc: fr/faq/reacts-for-ios/instant-messaging/0-4404715456157
+              - path: release-notes
+                title: Notes de Mise à Jour
+                subpaths:
+                  - path: 0-4407291018260
+                    doc: fr/faq/reacts-for-ios/release-notes/0-4407291018260
+                  - path: 0-5932582186013
+                    doc: fr/faq/reacts-for-ios/release-notes/0-5932582186013
+                  - path: 0-8150843416093
+                    doc: fr/faq/reacts-for-ios/release-notes/0-8150843416093
+                  - path: 0-9350249322141
+                    doc: fr/faq/reacts-for-ios/release-notes/0-9350249322141
+                  - path: 1-360045765011
+                    doc: fr/faq/reacts-for-ios/release-notes/1-360045765011
+                  - path: 10-360016741651
+                    doc: fr/faq/reacts-for-ios/release-notes/10-360016741651
+                  - path: 12-360000825123
+                    doc: fr/faq/reacts-for-ios/release-notes/12-360000825123
+                  - path: 13-360000412603
+                    doc: fr/faq/reacts-for-ios/release-notes/13-360000412603
+                  - path: 14-360000391843
+                    doc: fr/faq/reacts-for-ios/release-notes/14-360000391843
+                  - path: 15-115005439263
+                    doc: fr/faq/reacts-for-ios/release-notes/15-115005439263
+                  - path: 16-115003969443
+                    doc: fr/faq/reacts-for-ios/release-notes/16-115003969443
+                  - path: 17-115003969383
+                    doc: fr/faq/reacts-for-ios/release-notes/17-115003969383
+                  - path: 2-360044663272
+                    doc: fr/faq/reacts-for-ios/release-notes/2-360044663272
+                  - path: 3-360045110951
+                    doc: fr/faq/reacts-for-ios/release-notes/3-360045110951
+                  - path: 5-360033196912
+                    doc: fr/faq/reacts-for-ios/release-notes/5-360033196912
+                  - path: 6-360030592212
+                    doc: fr/faq/reacts-for-ios/release-notes/6-360030592212
+                  - path: 7-360028139032
+                    doc: fr/faq/reacts-for-ios/release-notes/7-360028139032
+                  - path: 8-360024537931
+                    doc: fr/faq/reacts-for-ios/release-notes/8-360024537931
+                  - path: 9-360020741732
+                    doc: fr/faq/reacts-for-ios/release-notes/9-360020741732
+          - path: reacts-for-webapp
+            doc: fr/faq/reacts-for-webapp/index
+            subpaths:
+              - path: general-use
+                title: Utilisation générale
+                subpaths:
+                  - path: 0-5206134495901
+                    doc: fr/faq/reacts-for-webapp/general-use/0-5206134495901
+                  - path: 1-360001117426
+                    doc: fr/faq/reacts-for-webapp/general-use/1-360001117426
+                  - path: 2-360030178411
+                    doc: fr/faq/reacts-for-webapp/general-use/2-360030178411
+                  - path: 3-360036048352
+                    doc: fr/faq/reacts-for-webapp/general-use/3-360036048352
+                  - path: 4-360034575272
+                    doc: fr/faq/reacts-for-webapp/general-use/4-360034575272
+                  - path: 5-5206338424221
+                    doc: fr/faq/reacts-for-webapp/general-use/5-5206338424221
+              - path: release-notes
+                title: Notes de Mise à Jour
+                subpaths:
+                  - path: 0-10033462572957
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-10033462572957
+                  - path: 0-360024537911
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360024537911
+                  - path: 0-360028434271
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360028434271
+                  - path: 0-360030592072
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360030592072
+                  - path: 0-360033561591
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360033561591
+                  - path: 0-360038659151
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360038659151
+                  - path: 0-360045110451
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360045110451
+                  - path: 0-360045111071
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360045111071
+                  - path: 0-360045339192
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360045339192
+                  - path: 0-360057231831
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-360057231831
+                  - path: 0-4407299356180
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-4407299356180
+                  - path: 0-5932638128157
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-5932638128157
+                  - path: 0-8150891138589
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-8150891138589
+                  - path: 0-9350150789405
+                    doc: fr/faq/reacts-for-webapp/release-notes/0-9350150789405
+              - path: troubleshooting
+                title: Dépannage
+                subpaths:
+                  - path: 0-360016509612
+                    doc: fr/faq/reacts-for-webapp/troubleshooting/0-360016509612
+          - path: reacts-for-windows
+            doc: fr/faq/reacts-for-windows/index
+            subpaths:
+              - path: general-use
+                title: Utilisation générale
+                subpaths:
+                  - path: 0-201868629
+                    doc: fr/faq/reacts-for-windows/general-use/0-201868629
+                  - path: 0-5070375178013
+                    doc: fr/faq/reacts-for-windows/general-use/0-5070375178013
+                  - path: 1-203057699
+                    doc: fr/faq/reacts-for-windows/general-use/1-203057699
+                  - path: 2-201850929
+                    doc: fr/faq/reacts-for-windows/general-use/2-201850929
+                  - path: 3-202764395
+                    doc: fr/faq/reacts-for-windows/general-use/3-202764395
+                  - path: 4-205132715
+                    doc: fr/faq/reacts-for-windows/general-use/4-205132715
+              - path: installation-&-updates
+                title: Installation et Mise à jour
+                subpaths:
+                  - path: 0-205483525
+                    doc: fr/faq/reacts-for-windows/installation-&-updates/0-205483525
+                  - path: 1-360039296791
+                    doc: fr/faq/reacts-for-windows/installation-&-updates/1-360039296791
+                  - path: 2-360000942083
+                    doc: fr/faq/reacts-for-windows/installation-&-updates/2-360000942083
+              - path: library
+                title: Library
+                subpaths:
+                  - path: 11-202719735
+                    doc: fr/faq/reacts-for-windows/library/11-202719735
+                  - path: 2-202719535
+                    doc: fr/faq/reacts-for-windows/library/2-202719535
+              - path: release-notes
+                title: Notes de Mise à Jour
+                subpaths:
+                  - path: 0-4407299333652
+                    doc: fr/faq/reacts-for-windows/release-notes/0-4407299333652
+                  - path: 0-5073274000925
+                    doc: fr/faq/reacts-for-windows/release-notes/0-5073274000925
+                  - path: 0-5932511453725
+                    doc: fr/faq/reacts-for-windows/release-notes/0-5932511453725
+                  - path: 0-8150708439837
+                    doc: fr/faq/reacts-for-windows/release-notes/0-8150708439837
+                  - path: 0-9350068938141
+                    doc: fr/faq/reacts-for-windows/release-notes/0-9350068938141
+                  - path: 1-360057231631
+                    doc: fr/faq/reacts-for-windows/release-notes/1-360057231631
+                  - path: 10-360024537291
+                    doc: fr/faq/reacts-for-windows/release-notes/10-360024537291
+                  - path: 11-360020741492
+                    doc: fr/faq/reacts-for-windows/release-notes/11-360020741492
+                  - path: 12-360016741431
+                    doc: fr/faq/reacts-for-windows/release-notes/12-360016741431
+                  - path: 13-360001225406
+                    doc: fr/faq/reacts-for-windows/release-notes/13-360001225406
+                  - path: 14-360000831286
+                    doc: fr/faq/reacts-for-windows/release-notes/14-360000831286
+                  - path: 15-360000412666
+                    doc: fr/faq/reacts-for-windows/release-notes/15-360000412666
+                  - path: 16-360000390326
+                    doc: fr/faq/reacts-for-windows/release-notes/16-360000390326
+                  - path: 17-115005441646
+                    doc: fr/faq/reacts-for-windows/release-notes/17-115005441646
+                  - path: 18-115003984726
+                    doc: fr/faq/reacts-for-windows/release-notes/18-115003984726
+                  - path: 19-115003969223
+                    doc: fr/faq/reacts-for-windows/release-notes/19-115003969223
+                  - path: 2-360045338312
+                    doc: fr/faq/reacts-for-windows/release-notes/2-360045338312
+                  - path: 20-115001585343
+                    doc: fr/faq/reacts-for-windows/release-notes/20-115001585343
+                  - path: 3-360044663252
+                    doc: fr/faq/reacts-for-windows/release-notes/3-360044663252
+                  - path: 5-360045110551
+                    doc: fr/faq/reacts-for-windows/release-notes/5-360045110551
+                  - path: 6-360038658551
+                    doc: fr/faq/reacts-for-windows/release-notes/6-360038658551
+                  - path: 7-360033562611
+                    doc: fr/faq/reacts-for-windows/release-notes/7-360033562611
+                  - path: 8-360030929211
+                    doc: fr/faq/reacts-for-windows/release-notes/8-360030929211
+                  - path: 9-360028430531
+                    doc: fr/faq/reacts-for-windows/release-notes/9-360028430531
+              - path: session
+                title: Session
+                subpaths:
+                  - path: 0-202764345
+                    doc: fr/faq/reacts-for-windows/session/0-202764345
+                  - path: 1-201916699
+                    doc: fr/faq/reacts-for-windows/session/1-201916699
+                  - path: 10-202764225
+                    doc: fr/faq/reacts-for-windows/session/10-202764225
+                  - path: 11-360026889332
+                    doc: fr/faq/reacts-for-windows/session/11-360026889332
+                  - path: 12-202764385
+                    doc: fr/faq/reacts-for-windows/session/12-202764385
+                  - path: 13-202056269
+                    doc: fr/faq/reacts-for-windows/session/13-202056269
+                  - path: 2-201916689
+                    doc: fr/faq/reacts-for-windows/session/2-201916689
+                  - path: 3-202764265
+                    doc: fr/faq/reacts-for-windows/session/3-202764265
+                  - path: 4-202764325
+                    doc: fr/faq/reacts-for-windows/session/4-202764325
+                  - path: 5-201916539
+                    doc: fr/faq/reacts-for-windows/session/5-201916539
+                  - path: 6-203318725
+                    doc: fr/faq/reacts-for-windows/session/6-203318725
+                  - path: 8-201916629
+                    doc: fr/faq/reacts-for-windows/session/8-201916629
+                  - path: 9-201872959
+                    doc: fr/faq/reacts-for-windows/session/9-201872959
+              - path: troubleshooting
+                title: Dépannage
+                subpaths:
+                  - path: 0-202816119
+                    doc: fr/faq/reacts-for-windows/troubleshooting/0-202816119
+                  - path: 0-205383685
+                    doc: fr/faq/reacts-for-windows/troubleshooting/0-205383685
+                  - path: 0-6007270326045
+                    doc: fr/faq/reacts-for-windows/troubleshooting/0-6007270326045
+                  - path: 1-205942445
+                    doc: fr/faq/reacts-for-windows/troubleshooting/1-205942445
+                  - path: 2-202815779
+                    doc: fr/faq/reacts-for-windows/troubleshooting/2-202815779
+                  - path: 4-202719825
+                    doc: fr/faq/reacts-for-windows/troubleshooting/4-202719825
+              - path: video-reacts-for-windows-video-tutorial
+                doc: fr/faq/reacts-for-windows/video-reacts-for-windows-video-tutorial
+          - path: troubleshooting
+            doc: fr/faq/troubleshooting/index
+            subpaths:
+              - path: connectivity-issues
+                title: Problèmes de connectivité
+                subpaths:
+                  - path: 2-204968219
+                    doc: fr/faq/troubleshooting/connectivity-issues/2-204968219
+              - path: installation-issues
+                title: Problèmes de connectivité
+                subpaths:
+                  - path: 0-115004770643
+                    doc: fr/faq/troubleshooting/installation-issues/0-115004770643
+                  - path: 5-206349936
+                    doc: fr/faq/troubleshooting/installation-issues/5-206349936
+                  - path: 6-204887025
+                    doc: fr/faq/troubleshooting/installation-issues/6-204887025
+                  - path: 9-204116849
+                    doc: fr/faq/troubleshooting/installation-issues/9-204116849
+              - path: login-and-account-issues
+                title: Problèmes liés au compte et Ouverture de Session
+                subpaths:
+                  - path: 0-4405017896989
+                    doc: fr/faq/troubleshooting/login-and-account-issues/0-4405017896989
+                  - path: 0-5152561693341
+                    doc: fr/faq/troubleshooting/login-and-account-issues/0-5152561693341
+                  - path: 1-4405017827485
+                    doc: fr/faq/troubleshooting/login-and-account-issues/1-4405017827485
+                  - path: 2-360000793343
+                    doc: fr/faq/troubleshooting/login-and-account-issues/2-360000793343
+                  - path: 3-4405009630749
+                    doc: fr/faq/troubleshooting/login-and-account-issues/3-4405009630749
+                  - path: 4-4405001604765
+                    doc: fr/faq/troubleshooting/login-and-account-issues/4-4405001604765
+                  - path: 5-4405001570717
+                    doc: fr/faq/troubleshooting/login-and-account-issues/5-4405001570717
+      - path: fr/onboarding
+        doc: fr/onboarding/index
+        subpaths:
+          - path: 0-4404866577565
+            doc: fr/onboarding/0-4404866577565
+          - path: 0-4415762446612
+            doc: fr/onboarding/0-4415762446612
+          - path: 0-4415797460500
+            doc: fr/onboarding/0-4415797460500
+          - path: 0-4415797798420
+            doc: fr/onboarding/0-4415797798420
+          - path: 0-5203907954845
+            doc: fr/onboarding/0-5203907954845
+          - path: 0-5205619132189
+            doc: fr/onboarding/0-5205619132189
+          - path: 1-202719815
+            doc: fr/onboarding/1-202719815
+      - path: fr/security-and-privacy
+        doc: fr/security-and-privacy/index
+        subpaths:
+          - path: 0-360046168211
+            doc: fr/security-and-privacy/0-360046168211
+          - path: 0-4404934496925
+            doc: fr/security-and-privacy/0-4404934496925
+          - path: 0-4405382573213
+            doc: fr/security-and-privacy/0-4405382573213
+      - path: fr/contact-us
+        doc: fr/contact-us
+

@@ -2,6 +2,7 @@ paths:
   - name: assets
     path: assets
 
+iaFile: ./ia.yaml
 docsFolder: ./docs
 
 title: Reacts service documentation
@@ -26,14 +27,6 @@ header:
         link: https://www.reacts.com/en/legal/privacy
       - label: End User License Agreement
         link: https://www.reacts.com/en/legal/terms-and-conditions
-    type: hover
-  - label: Language
-    position: right
-    options:
-      - label: English
-        link: /en
-      - label: French
-        link: /fr
     type: hover
 
 footer:
