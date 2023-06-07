@@ -22,6 +22,8 @@ jobs:
             echo '@dls-toolkit-react-prototyping:registry = https://artifactory-ehv.ta.philips.com/artifactory/api/npm/dl-innersource-npm' >> ~/.npmrc
             npm i -g --unsafe-perm --loglevel=error @philips-app/mark 
         - name: Mark Setup
-          run: mark setup
+          run: |
+            mark setup
+            mkdir ./dist
         - name: Mark Build
-          run: mark build
+          run: mark build ./config.yaml --output ./dist
