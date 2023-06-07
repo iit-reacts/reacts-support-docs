@@ -20,8 +20,8 @@ jobs:
             echo '@philips-app:registry = https://artifactory-ehv.ta.philips.com/artifactory/api/npm/dl-innersource-npm' >> ~/.npmrc
             echo '@dls-tokens:registry = https://artifactory-ehv.ta.philips.com/artifactory/api/npm/dl-innersource-npm' >> ~/.npmrc
             echo '@dls-toolkit-react-prototyping:registry = https://artifactory-ehv.ta.philips.com/artifactory/api/npm/dl-innersource-npm' >> ~/.npmrc
-            npm i -g  --loglevel=error @philips-app/mark
-            mark setup
+            npm i -g --unsafe-perm --loglevel=error @philips-app/mark 
+        - name: Mark Setup
+          run: mark setup
         - name: Mark Build
-          run: |
-            mark build
+          run: mark build
