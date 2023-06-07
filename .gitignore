@@ -3,5 +3,7 @@
 *.code-workspace
 .vscode
 
+.idea
+
 node_modules
 dist

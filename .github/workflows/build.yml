@@ -1,0 +1,27 @@
+name: Generate docs.reacts.com
+
+on:
+  push:
+    branches:
+        - main
+  workflow_dispatch:
+
+jobs:
+    mark-build:
+        runs-on: [self-hosted, linux, x64, philips]
+        steps:
+        - uses: actions/checkout@v3
+        - name: Setup NodeJS
+          uses: actions/setup-node@v2
+          with:
+            node-version: '14'
+        - name: Mark Installation
+          run: |
+            echo '@philips-app:registry = https://artifactory-ehv.ta.philips.com/artifactory/api/npm/dl-innersource-npm' >> ~/.npmrc
+            echo '@dls-tokens:registry = https://artifactory-ehv.ta.philips.com/artifactory/api/npm/dl-innersource-npm' >> ~/.npmrc
+            echo '@dls-toolkit-react-prototyping:registry = https://artifactory-ehv.ta.philips.com/artifactory/api/npm/dl-innersource-npm' >> ~/.npmrc
+            npm i -g  --loglevel=error @philips-app/mark
+            mark setup
+        - name: Mark Build
+          run: |
+            mark build
