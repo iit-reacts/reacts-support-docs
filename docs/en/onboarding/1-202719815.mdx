@@ -137,13 +137,18 @@ To improve streaming performance, make sure inbound connections on the 49152-655
 
 Here are basic trouble shooting steps to help you to fix some standard connectivity issues.
 
-**Step 1:** Verify that your firewall and/or web filtering application settings allow Reacts to connect, from your web browser window try to access**[https://svc.iitreacts.com/api/echo](https://svc.iitreacts.com/api/echo).**
+**Step 1:** If you're having audio and/or video streaming issues, determine if audio/video connection is failing between two Reacts clients within the same network or when connecting to a Reacts client on an external network.
+If audio/video connection works within the same network but fails when connecting to a client located in an external network, double check the IP whitelisting and proxy settings.
+If audio/video connection works correctly with a Reacts instance located in an external network but not on your internal network, try disabling direct connect between the clients.
+If you are still unable to connect contact support.
+
+**Step 2:** Verify that your firewall and/or web filtering application settings allow Reacts to connect, from your web browser window try to access**[https://svc.iitreacts.com/api/echo](https://svc.iitreacts.com/api/echo).**
 
 You should see the message:«{"Version":"","Body":"Echo OK!","Type":"System.String","Time":"2016-07-27T15:04:59.6325394Z","Id":"676b0cf1-e3ad-4cb7-bb9d-6076e2913efc"}».
 
-**Step 2:** Ensure that there is no interference between your antivirussoftware and Reacts that could prevent the software from beinglaunched.
+**Step 3:** Ensure that there is no interference between your antivirussoftware and Reacts that could prevent the software from beinglaunched.
 
-**Step 3:** Enter your proxy information. If you connect though a proxy and you are using Reacts Windows, you may need to manually enter the proxy information into the Reacts settings panel.
+**Step 4:** Enter your proxy information. If you connect though a proxy and you are using Reacts Windows, you may need to manually enter the proxy information into the Reacts settings panel.
 
 1\. Launch Reacts and click on “Network settings” on the login screen.
 
