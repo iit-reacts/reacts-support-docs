@@ -4,11 +4,19 @@ on:
   push:
     branches:
         - main
+        - cleanup
   workflow_dispatch:
 
 jobs:
     mark-build:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
         runs-on: [self-hosted, linux, x64, philips]
+        permissions:
+            contents: read
+            id-token: write
+            pages: write
         steps:
         - uses: actions/checkout@v3
         - name: Setup NodeJS
@@ -33,7 +41,7 @@ jobs:
           uses: actions/upload-pages-artifact@v1
           with:
             # Upload entire repository
-            path: './dist'
+            path: './dist/'
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v2
