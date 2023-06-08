@@ -140,13 +140,19 @@ Pour améliorer performances de streaming, assurez-vous que les connexions entra
 
 Voici les étapes de diagnostic pour vous aider à résoudre quels problèmes standard de connectivités
 
-**Étape 1** : Vérifier que votre pare-feu et ou vos filtres webs autorisent Reacts à se connecter,  accédez à l’adresse **[https://svc.iitreacts.com/api/echo](https://svc.iitreacts.com/api/echo)** [](https://signaling.iitreacts.com/)au moyen de votre navigateur.
+**Étape 1** : 
+Si vous rencontrez des problèmes de connexion audio et/ou vidéo, déterminez si la connexion audio/vidéo échoue entre deux clients Reacts au sein du même réseau ou lors de la connexion à un client Reacts sur un réseau externe.
+Si la connexion audio/vidéo fonctionne sur le même réseau mais échoue lors de la connexion à un client situé dans un réseau externe, vérifiez les paramètres de la liste blanche IP et du proxy.
+Si la connexion audio/vidéo fonctionne correctement avec une instance Reacts située dans un réseau externe mais pas sur votre réseau interne, essayez de désactiver la connexion directe entre les clients.
+Si vous ne parvenez toujours pas à vous connecter, contactez le support.
+
+**Étape 2** : Vérifier que votre pare-feu et ou vos filtres webs autorisent Reacts à se connecter,  accédez à l’adresse **[https://svc.iitreacts.com/api/echo](https://svc.iitreacts.com/api/echo)** [](https://signaling.iitreacts.com/)au moyen de votre navigateur.
 
  Le message «{"Version":"","Body":"Echo OK!","Type":"System.String","Time":"2016-07-27T15:04:59.6325394Z","Id":"676b0cf1-e3ad-4cb7-bb9d-6076e2913efc"}» devrait s’afficher.
 
-**Étape 2** : S'assurer qu'il n'y a pas d'interférences entre votre logiciel Antivirus et Reacts qui pourraient empêcher le lancement du logiciel.
+**Étape 3** : S'assurer qu'il n'y a pas d'interférences entre votre logiciel Antivirus et Reacts qui pourraient empêcher le lancement du logiciel.
 
-**Étape 3** : Entrer les informations concernant votre Proxy. Si vous vous connectez via un Proxyet que vous utilisez Reacts Windows, vous devrez entrer manuellement ces informations dans la section "Paramètres réseau" de l'application Reacts.
+**Étape 4** : Entrer les informations concernant votre Proxy. Si vous vous connectez via un Proxyet que vous utilisez Reacts Windows, vous devrez entrer manuellement ces informations dans la section "Paramètres réseau" de l'application Reacts.
 
 1\. Lancer Reacts et cliquer sur "Paramètre réseau" dans la page de connexion.
 
