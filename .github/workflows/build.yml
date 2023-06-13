@@ -37,13 +37,13 @@ jobs:
         - name: Create Custom 404
           run: |
             cp ./dist/index.html ./dist/404.html
-        - name: Setup Pages
-          uses: actions/configure-pages@v3
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v1
+        - name: Pushes to another repository
+          uses: cpina/github-action-push-to-another-repository@main
+          env:
+            SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
           with:
-            # Upload entire repository
-            path: './dist/'
-        - name: Deploy to GitHub Pages
-          id: deployment
-          uses: actions/deploy-pages@v2
+            source-directory: 'dist'
+            destination-github-username: 'iit-reacts'
+            destination-repository-name: 'reacts-support-docs'
+            user-email: hsp-reacts-bot@philips.com
+            target-branch: main
