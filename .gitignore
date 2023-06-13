@@ -1,9 +1,0 @@
-.DS_Store
-
-*.code-workspace
-.vscode
-
-.idea
-
-node_modules
-dist
